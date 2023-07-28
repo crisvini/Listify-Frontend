@@ -1,73 +1,148 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(7, 4, 4, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --bg-primary-custom: #F5F5F5;
+  --bg-secondary-custom: #E0E0E0;
+  --text-primary-custom: #333333;
+  --text-secondary-custom: #B0B0B0;
+  --link-color-custom: #757575;
+  --link-hover-color-custom: #E0E0E0;
+  --btn-primary-bg-custom: #E0E0E0;
+  --btn-primary-color-custom: #333333;
+  --btn-primary-hover-bg-custom: #B0B0B0;
+  --btn-secondary-bg-custom: #B0B0B0;
+  --btn-secondary-color-custom: #333333;
+  --btn-secondary-hover-bg-custom: #888888;
+  --orange-logo: #FF9800;
+  --gray-logo: #757575;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary-custom: #222222;
+    --bg-secondary-custom: #444444;
+    --text-primary-custom: #ECEFF1;
+    --text-secondary-custom: #A0A0A0;
+    --link-color-custom: #A0A0A0;
+    --link-hover-color-custom: #ECEFF1;
+    --btn-primary-bg-custom: #444444;
+    --btn-primary-color-custom: #ECEFF1;
+    --btn-primary-hover-bg-custom: #666666;
+    --btn-secondary-bg-custom: #666666;
+    --btn-secondary-color-custom: #ECEFF1;
+    --btn-secondary-hover-bg-custom: #888888;
+  }
 }
 
 body {
-  margin: 0;
+  background-color: var(--bg-primary-custom);
+  color: var(--text-primary-custom);
+}
+
+a {
+  color: var(--link-color-custom);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--orange-logo);
+  transition: color .20s ease-in-out;
+}
+
+/* login */
+.div-circle {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.mid-circle {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--bg-secondary-custom), var(--bg-primary-custom));
+  border-radius: 100% 0% 0 0;
+  position: relative;
+  overflow: hidden;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.card-position {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.logo-login {
+  width: 100%;
 }
+
+/* login */
+
+/* form */
+.form-label {
+  color: var(--text-primary-custom);
+}
+
+.form-control {
+  background-color: transparent;
+  border-color: var(--orange-logo);
+  border: 1px solid var(--text-primary-custom);
+  color: var(--text-primary-custom);
+}
+
+.form-control:focus {
+  background-color: transparent;
+  color: var(--text-primary-custom);
+  border-color: var(--orange-logo);
+  box-shadow: 0 0 0 0.25rem rgba(255, 152, 0, .25);
+}
+
+/* .form-control {
+  background-color: var(--bg-secondary-custom);
+  border-color: var(--bg-secondary-custom);
+  color: var(--text-primary-custom);
+}
+
+.form-control:focus {
+  color: var(--text-primary-custom);
+  background-color: var(--bg-secondary-custom);
+  border-color: var(--orange-logo);
+  box-shadow: 0 0 0 0.25rem rgba(255, 152, 0, .25);
+} */
+
+/* .form-control {
+  background-color: var(--bg-primary-custom);
+  border-color: var(--bg-primary-custom);
+  color: var(--text-primary-custom);
+}
+
+.form-control:focus {
+  color: var(--text-primary-custom);
+  background-color: var(--bg-primary-custom);
+  border-color: var(--orange-logo);
+  box-shadow: 0 0 0 0.25rem rgba(255, 152, 0, .25);
+} */
+
+/* form */
+
+/* button */
+.btn-orange {
+  --bs-btn-color: var(--text-primary-custom);
+  --bs-btn-bg: var(--orange-logo);
+  --bs-btn-border-color: var(--orange-logo);
+  --bs-btn-hover-color: var(--text-primary-custom);
+  --bs-btn-hover-bg: #e6865b;
+  --bs-btn-hover-border-color: #e6865b;
+  --bs-btn-focus-shadow-rgb: 255, 130, 0;
+  --bs-btn-active-color: var(--text-primary-custom);
+  --bs-btn-active-bg: #cc673f;
+  --bs-btn-active-border-color: #cc673f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--text-primary-custom);
+  --bs-btn-disabled-bg: var(--orange-logo);
+  --bs-btn-disabled-border-color: var(--orange-logo);
+}
+
+/* button */
