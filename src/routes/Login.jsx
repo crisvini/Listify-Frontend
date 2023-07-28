@@ -1,10 +1,12 @@
-import { Button } from "bootstrap"
 import Logo from '../assets/logos/Horizontal.png'
 
 const Login = () => {
     return (
         <div className="div-circle">
             <div className="mid-circle">
+                <div className='back-position'>
+                    <span><i className="bi bi-arrow-left-short"></i>Voltar</span>
+                </div>
                 <div className="card-position">
                     <div className="container">
                         <div className="row">
@@ -28,28 +30,6 @@ const Login = () => {
                 </div>
             </div>
         </div>
-        // <div className="container">
-        //     <div className="row mb-5">
-        //         <div className="col-4">
-        //             <h1 className="bg-primary">Background</h1>
-        //         </div>
-        //     </div>
-        //     <div className="row mb-5">
-        //         <div className="col-4">
-        //             <h2 className="text-primary">Texto</h2>
-        //         </div>
-        //     </div>
-        //     <div className="row mb-5">
-        //         <div className="col-4">
-        //             <a className="link-primary" href="#">Link</a>
-        //         </div>
-        //     </div>
-        //     <div className="row mb-5">
-        //         <div className="col-4">
-        //             <button className="btn btn-primary">Login</button>
-        //         </div>
-        //     </div>
-        // </div>
     )
 }
 
