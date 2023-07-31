@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom"
 import Logo from '../assets/logos/Horizontal.png'
 import LogoSquare from '../assets/logos/ListifySquare.png'
 
-const Home = () => {
+const LandingPage = () => {
     const navigate = useNavigate()
 
     return (
@@ -74,4 +74,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default LandingPage

@@ -4,10 +4,10 @@ import App from './App.jsx'
 import './index.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Login from './routes/Login.jsx'
-import Home from './routes/Home.jsx'
 import ErrorPage from './routes/ErrorPage.jsx'
-import Cadastrar from './routes/Cadastrar.jsx'
+import LandingPage from './routes/LandingPage.jsx'
+import LoginPage from './routes/LoginPage.jsx'
+import CadastrarPage from './routes/CadastrarPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,15 +17,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />
+        element: <LandingPage />
       },
       {
         path: 'login',
-        element: <Login />
+        element: <LoginPage />
       },
       {
         path: 'cadastrar',
-        element: <Cadastrar />
+        element: <CadastrarPage />
       }
     ]
   }

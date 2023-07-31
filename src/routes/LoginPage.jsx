@@ -2,7 +2,7 @@ import Logo from '../assets/logos/Horizontal.png'
 import { Link } from 'react-router-dom'
 import BackButtonNav from '../components/BackButtonNav'
 
-const Login = () => {
+const LoginPage = () => {
     return (
         <div className="div-circle">
             <div className="mid-circle">
@@ -33,4 +33,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default LoginPage
