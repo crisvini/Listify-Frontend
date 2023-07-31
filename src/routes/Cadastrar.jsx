@@ -6,7 +6,7 @@ const Cadastrar = () => {
     return (
         <div className="div-circle">
             <div className="mid-circle">
-                <BackButtonNav url='/' />
+                <BackButtonNav />
                 <div className="card-position">
                     <div className="container">
                         <div className="row">

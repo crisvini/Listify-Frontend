@@ -22,13 +22,13 @@ const Home = () => {
             </header>
             <main className="container-xxl mt-1 mt-lg-3">
                 <div className="row">
-                    <div className="col-12 col-lg-6 order-lg-1">
-                        <img src={LogoSquare} alt="Listify" className="w-100" />
-                    </div>
-                    <div className="col-12 col-lg-6 align-self-center order-lg-0 mt-1">
+                    <div className="col-12 col-lg-6 align-self-center my-5 mt-lg-1 mb-lg-0">
                         <h1>Listas e Anotações Simplificadas.</h1>
                         <p>Organização descomplicada - Teste o Listify gratuitamente e experimente o poder das listas e anotações simplificadas.</p>
                         <button type="button" className="btn btn-lg btn-orange w-100-custom">Cadastrar gratuitamente</button>
+                    </div>
+                    <div className="col-12 col-lg-6">
+                        <img src={LogoSquare} alt="Listify" className="w-100" />
                     </div>
                 </div>
                 <div className="row mt-lg-5 g-4 py-5 row-cols-1 row-cols-lg-3">
