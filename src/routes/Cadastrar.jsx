@@ -25,6 +25,9 @@ const Cadastrar = () => {
                                     <input type="password" className="w-100 form-control" id="password" />
                                     <input type="submit" value='Cadastrar' className="btn btn-orange w-100 mt-4" />
                                 </form>
+                                <div className="mt-2">
+                                    <Link to='/login'>Já tem uma conta? entrar</Link>
+                                </div>
                             </div>
                         </div>
                     </div>

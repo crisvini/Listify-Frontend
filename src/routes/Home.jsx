@@ -25,7 +25,7 @@ const Home = () => {
                     <div className="col-12 col-lg-6 align-self-center my-5 mt-lg-1 mb-lg-0">
                         <h1>Listas e Anotações Simplificadas.</h1>
                         <p>Organização descomplicada - Teste o Listify gratuitamente e experimente o poder das listas e anotações simplificadas.</p>
-                        <button type="button" className="btn btn-lg btn-orange w-100-custom">Cadastrar gratuitamente</button>
+                        <button type="button" className="btn btn-lg btn-orange w-100-custom" onClick={() => navigate('/cadastrar')}>Cadastrar gratuitamente</button>
                     </div>
                     <div className="col-12 col-lg-6">
                         <img src={LogoSquare} alt="Listify" className="w-100" />
