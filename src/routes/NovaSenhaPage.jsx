@@ -3,7 +3,7 @@ import LogoLogin from '../components/LogoLogin'
 
 const NovaSenhaPage = () => {
     return (
-        <div className="div-circle">
+        <main className="div-circle">
             <div className="mid-circle">
                 <BackButtonNav />
                 <div className="card-position">
@@ -26,7 +26,7 @@ const NovaSenhaPage = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     )
 }
 

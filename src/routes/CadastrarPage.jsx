@@ -4,7 +4,7 @@ import LogoLogin from '../components/LogoLogin'
 
 const CadastrarPage = () => {
     return (
-        <div className="div-circle">
+        <main className="div-circle">
             <div className="mid-circle">
                 <BackButtonNav />
                 <div className="card-position">
@@ -34,7 +34,7 @@ const CadastrarPage = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     )
 }
 

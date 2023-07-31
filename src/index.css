@@ -239,3 +239,16 @@ a:hover {
 .active:hover {
   color: #cc673f;
 }
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: var(--text-primary-custom);
+  text-decoration: none;
+  background-color: var(--bg-primary-custom);
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: var(--orange-logo);
+  background-color: var(--bg-primary-custom);
+}

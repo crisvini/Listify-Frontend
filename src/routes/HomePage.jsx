@@ -4,8 +4,9 @@ const HomePage = () => {
     return (
         <div>
             <Navbar />
-            <br />
-            <div>HomePage</div>
+            <main className="container-xxl">
+                a
+            </main>
         </div>
     )
 }
