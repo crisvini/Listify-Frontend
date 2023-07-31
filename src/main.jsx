@@ -8,6 +8,7 @@ import ErrorPage from './routes/ErrorPage.jsx'
 import LandingPage from './routes/LandingPage.jsx'
 import LoginPage from './routes/LoginPage.jsx'
 import CadastrarPage from './routes/CadastrarPage.jsx'
+import RecuperacaoContaPage from './routes/RecuperacaoContaPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: 'cadastrar',
         element: <CadastrarPage />
+      },
+      {
+        path: 'recuperacao',
+        element: <RecuperacaoContaPage />
       }
     ]
   }

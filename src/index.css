@@ -202,6 +202,16 @@ a:hover {
 
 /* button */
 
+/* alert */
+.alert-orange {
+  --bs-alert-color: var(--orange-logo);
+  --bs-alert-bg: #fcdcab3b;
+  --bs-alert-border-color: var(--orange-logo);
+  --bs-alert-link-color: var(--text-primary-custom);
+}
+
+/* alert */
+
 .logo-navbar {
   /* width: 100%; */
   height: 2.8rem;
