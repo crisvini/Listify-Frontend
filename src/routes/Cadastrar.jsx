@@ -2,7 +2,7 @@ import Logo from '../assets/logos/Horizontal.png'
 import { Link } from 'react-router-dom'
 import BackButtonNav from '../components/BackButtonNav'
 
-const Login = () => {
+const Cadastrar = () => {
     return (
         <div className="div-circle">
             <div className="mid-circle">
@@ -15,15 +15,16 @@ const Login = () => {
                                     <img src={Logo} alt="Listify" className="logo-login" />
                                 </div>
                                 <form>
-                                    <label htmlFor="email" className="form-label">E-mail</label>
+                                    <label htmlFor="nome" className="form-label">Primeiro nome</label>
+                                    <input type="text" className="w-100 form-control" id="nome" />
+                                    <label htmlFor="sobrenome" className="form-label mt-1">Sobrenome</label>
+                                    <input type="text" className="w-100 form-control" id="sobrenome" />
+                                    <label htmlFor="email" className="form-label mt-1">E-mail</label>
                                     <input type="email" className="w-100 form-control" id="email" />
                                     <label htmlFor="password" className="form-label mt-1">Senha</label>
                                     <input type="password" className="w-100 form-control" id="password" />
-                                    <input type="submit" value='Entrar' className="btn btn-orange w-100 mt-4" />
+                                    <input type="submit" value='Cadastrar' className="btn btn-orange w-100 mt-4" />
                                 </form>
-                                <div className="mt-2">
-                                    <Link to='/cadastrar'>Novo usuário? cadastrar</Link>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -33,4 +34,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Cadastrar
