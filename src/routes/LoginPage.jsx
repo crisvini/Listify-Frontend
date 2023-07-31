@@ -1,6 +1,6 @@
-import Logo from '../assets/logos/Horizontal.png'
 import { Link } from 'react-router-dom'
 import BackButtonNav from '../components/BackButtonNav'
+import LogoLogin from '../components/LogoLogin'
 
 const LoginPage = () => {
     return (
@@ -11,8 +11,9 @@ const LoginPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-10 col-lg-4 mx-auto p-0 p-lg-4 py-lg-5 rounded-5">
-                                <div className="logo-login mb-3">
-                                    <img src={Logo} alt="Listify" className="logo-login" />
+                                <LogoLogin />
+                                <div className='mb-2'>
+                                    <h5 className='fw-bold'>Entrar</h5>
                                 </div>
                                 <form>
                                     <label htmlFor="email" className="form-label">E-mail</label>
@@ -23,7 +24,7 @@ const LoginPage = () => {
                                 </form>
                                 <div className="mt-2 d-flex justify-content-between">
                                     <Link to='/cadastrar'>Novo usuário? cadastrar</Link>
-                                    <Link to='/recuperacao'>Esqueci minha senha</Link>
+                                    <Link to='/recuperacao-senha'>Esqueci minha senha</Link>
                                 </div>
                             </div>
                         </div>

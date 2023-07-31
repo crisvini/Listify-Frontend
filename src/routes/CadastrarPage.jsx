@@ -1,6 +1,6 @@
-import Logo from '../assets/logos/Horizontal.png'
 import { Link } from 'react-router-dom'
 import BackButtonNav from '../components/BackButtonNav'
+import LogoLogin from '../components/LogoLogin'
 
 const CadastrarPage = () => {
     return (
@@ -11,8 +11,9 @@ const CadastrarPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-10 col-lg-4 mx-auto p-0 p-lg-4 py-lg-5 rounded-5">
-                                <div className="logo-login mb-3">
-                                    <img src={Logo} alt="Listify" className="logo-login" />
+                                <LogoLogin />
+                                <div className='mb-2'>
+                                    <h5 className='fw-bold'>Nova conta</h5>
                                 </div>
                                 <form>
                                     <label htmlFor="nome" className="form-label">Primeiro nome</label>

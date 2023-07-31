@@ -9,6 +9,8 @@ import LandingPage from './routes/LandingPage.jsx'
 import LoginPage from './routes/LoginPage.jsx'
 import CadastrarPage from './routes/CadastrarPage.jsx'
 import RecuperacaoContaPage from './routes/RecuperacaoContaPage.jsx'
+import NovaSenhaPage from './routes/NovaSenhaPage.jsx'
+import ConfirmacaoEmailPage from './routes/ConfirmacaoEmailPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -29,8 +31,16 @@ const router = createBrowserRouter([
         element: <CadastrarPage />
       },
       {
-        path: 'recuperacao',
+        path: 'recuperacao-senha',
         element: <RecuperacaoContaPage />
+      },
+      {
+        path: 'confirmacao-email',
+        element: <ConfirmacaoEmailPage />
+      },
+      {
+        path: 'nova-senha',
+        element: <NovaSenhaPage />
       }
     ]
   }
