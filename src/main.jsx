@@ -51,16 +51,16 @@ const router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: 'configuracoes',
-        element: <ConfiguracoesPage />
-      },
-      {
         path: 'anotacoes',
         element: <AnotacoesPage />
       },
       {
         path: 'listas',
         element: <ListasPage />
+      },
+      {
+        path: 'configuracoes',
+        element: <ConfiguracoesPage />
       }
     ]
   }
