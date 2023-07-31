@@ -227,3 +227,15 @@ a:hover {
     width: auto;
   }
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+.active {
+  color: var(--orange-logo);
+}
+
+.active:hover {
+  color: #cc673f;
+}
