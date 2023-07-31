@@ -12,6 +12,9 @@ import RecuperacaoContaPage from './routes/RecuperacaoContaPage.jsx'
 import NovaSenhaPage from './routes/NovaSenhaPage.jsx'
 import ConfirmacaoEmailPage from './routes/ConfirmacaoEmailPage.jsx'
 import HomePage from './routes/HomePage.jsx'
+import ConfiguracoesPage from './routes/ConfiguracoesPage.jsx'
+import AnotacoesPage from './routes/AnotacoesPage.jsx'
+import ListasPage from './routes/ListasPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -46,6 +49,18 @@ const router = createBrowserRouter([
       {
         path: 'home',
         element: <HomePage />
+      },
+      {
+        path: 'configuracoes',
+        element: <ConfiguracoesPage />
+      },
+      {
+        path: 'anotacoes',
+        element: <AnotacoesPage />
+      },
+      {
+        path: 'listas',
+        element: <ListasPage />
       }
     ]
   }

@@ -1,14 +1,14 @@
 import Navbar from "../components/Navbar"
 
-const HomePage = () => {
+const ListasPage = () => {
     return (
         <div>
             <Navbar />
             <main className="container-xxl">
-                Home
+                Listas
             </main>
         </div>
     )
 }
 
-export default HomePage
+export default ListasPage
