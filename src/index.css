@@ -56,6 +56,18 @@ a:hover {
   color: var(--text-secondary-custom);
 }
 
+.bg-orange {
+  background-color: var(--orange-logo);
+}
+
+.bg-primary-custom {
+  background-color: var(--bg-primary-custom);
+}
+
+.bg-secondary-custom {
+  background-color: var(--bg-secondary-custom);
+}
+
 /* login */
 .div-circle {
   display: flex;
@@ -193,4 +205,15 @@ a:hover {
 .logo-navbar {
   /* width: 100%; */
   height: 2.8rem;
+}
+
+.w-100-custom {
+  width: 100%;
+}
+
+/* Tamanho do lg do bootstrap */
+@media (min-width: 992px) {
+  .w-100-custom {
+    width: auto;
+  }
 }
