@@ -1,7 +1,7 @@
-const Tag = ({ key, corTexto, corBg, nome }) => {
+const Tag = ({ corTexto, corBg, nome }) => {
     return (
         <>
-            <span key={key} className="badge me-2" style={{ color: corTexto, backgroundColor: corBg }}>{nome}</span>
+            <span className="badge me-2" style={{ color: corTexto, backgroundColor: corBg }}>{nome}</span>
         </>
     )
 }

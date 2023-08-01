@@ -1,32 +1,21 @@
 import { Link } from "react-router-dom"
+import Tag from "./Tag"
+import Tarefa from "./Tarefa"
 
-const ListasCard = ({ id }) => {
+const ListasCard = ({ id, nome, descricao, tarefas, tags }) => {
     return (
         <div className="w-100 mt-2 bg-secondary-custom p-3 rounded-3">
-            <Link to={'/listas/' + id}><h5>Lista {id} <i className="bi bi-arrow-return-right fs-7"></i></h5></Link>
-            <ul className="without-dots">
-                <li className="mb-2">
-                    <div>
-                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                        <span className="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos consequuntur minus voluptates. Impedit quas perspiciatis unde cupiditate alias eius cum eum expedita illo, vero error est fugit obcaecati sed!</span>
-                    </div>
-                </li>
-                <li className="mb-2">
-                    <div>
-                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                        <span className="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos consequuntur minus voluptates. Impedit quas perspiciatis unde cupiditate alias eius cum eum expedita illo, vero error est fugit obcaecati sed!</span>
-                    </div>
-                </li>
-                <li className="mb-2">
-                    <div>
-                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                        <span className="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos consequuntur minus voluptates. Impedit quas perspiciatis unde cupiditate alias eius cum eum expedita illo, vero error est fugit obcaecati sed!</span>
-                    </div>
-                </li>
+            <Link to={'/listas/' + id}><h5>{nome} <i className="bi bi-arrow-return-right fs-7"></i></h5></Link>
+            <span className="fw-light">{descricao}</span>
+            <ul className="without-dots mt-3">
+                {tarefas.map((value, key) => (
+                    <Tarefa key={key} id={value.id} completa={value.completa} texto={value.texto} />
+                ))}
             </ul>
             <div className="mt-2">
-                <span className="badge bg-danger me-2">Trabalho</span>
-                <span className="badge bg-primary me-2">Prioridade</span>
+                {tags.map((value, key) => (
+                    <Tag key={key} corTexto={value.corTexto} corBg={value.corBg} nome={value.nome} />
+                ))}
             </div>
             <div className="d-flex justify-content-between align-items-center">
                 <span className="fs-7 fw-lighter me-3 text-secondary-custom align-self-end">Criado em 01/08/2023 às 11:14</span>
