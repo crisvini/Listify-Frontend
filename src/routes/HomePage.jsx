@@ -14,40 +14,20 @@ const HomePage = () => {
                         </div>
                         <div className="scrollable-container">
                             <div className="w-100 mt-2 bg-secondary-custom p-3 rounded-3">
-                                <div className="d-flex justify-content-end align-items-center">
-                                    <a className="pointer fs-5 me-2"><i className="bi bi-pencil"></i></a>
-                                    <a className="pointer fs-5"><i className="bi bi-trash"></i></a>
-                                </div>
                                 <Link to='/anotacao/1'><h5>Anotação 1 <i className="bi bi-arrow-return-right"></i></h5></Link>
                                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi eum soluta magnam beatae consectetur in ut itaque repellendus explicabo necessitatibus, adipisci ratione suscipit. Nihil id eius facere nostrum sequi?
                                     Vel aliquam soluta mollitia, cupiditate magni veniam qui. Recusandae esse soluta tenetur dolore eos tempore ab vero itaque, excepturi odio quam mollitia, eveniet eum voluptatibus modi sunt fugit magni aliquid?</span>
-                            </div>
-                            <div className="w-100 mt-2 bg-secondary-custom p-3 rounded-3">
-                                <div className="d-flex justify-content-end align-items-center">
-                                    <a className="pointer fs-5 me-2"><i className="bi bi-pencil"></i></a>
-                                    <a className="pointer fs-5"><i className="bi bi-trash"></i></a>
+                                <div className="mt-2">
+                                    <span className="badge bg-danger me-2">Trabalho</span>
+                                    <span className="badge bg-primary me-2">Prioridade</span>
                                 </div>
-                                <Link to='/anotacao/2'><h5>Anotação 2 <i className="bi bi-arrow-return-right"></i></h5></Link>
-                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi eum soluta magnam beatae consectetur in ut itaque repellendus explicabo necessitatibus, adipisci ratione suscipit. Nihil id eius facere nostrum sequi?
-                                    Vel aliquam soluta mollitia, cupiditate magni veniam qui. Recusandae esse soluta tenetur dolore eos tempore ab vero itaque, excepturi odio quam mollitia, eveniet eum voluptatibus modi sunt fugit magni aliquid?</span>
-                            </div>
-                            <div className="w-100 mt-2 bg-secondary-custom p-3 rounded-3">
-                                <div className="d-flex justify-content-end align-items-center">
-                                    <a className="pointer fs-5 me-2"><i className="bi bi-pencil"></i></a>
-                                    <a className="pointer fs-5"><i className="bi bi-trash"></i></a>
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <span className="fs-7 fw-lighter me-3 text-secondary-custom align-self-end">Criado em 01/08/2023 às 11:14</span>
+                                    <div>
+                                        <a className="pointer fs-5 me-2"><i className="bi bi-pencil"></i></a>
+                                        <a className="pointer fs-5"><i className="bi bi-trash"></i></a>
+                                    </div>
                                 </div>
-                                <Link to='/anotacao/3'><h5>Anotação 3 <i className="bi bi-arrow-return-right"></i></h5></Link>
-                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi eum soluta magnam beatae consectetur in ut itaque repellendus explicabo necessitatibus, adipisci ratione suscipit. Nihil id eius facere nostrum sequi?
-                                    Vel aliquam soluta mollitia, cupiditate magni veniam qui. Recusandae esse soluta tenetur dolore eos tempore ab vero itaque, excepturi odio quam mollitia, eveniet eum voluptatibus modi sunt fugit magni aliquid?</span>
-                            </div>
-                            <div className="w-100 mt-2 bg-secondary-custom p-3 rounded-3">
-                                <div className="d-flex justify-content-end align-items-center">
-                                    <a className="pointer fs-5 me-2"><i className="bi bi-pencil"></i></a>
-                                    <a className="pointer fs-5"><i className="bi bi-trash"></i></a>
-                                </div>
-                                <Link to='/anotacao/4'><h5>Anotação 4 <i className="bi bi-arrow-return-right"></i></h5></Link>
-                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi eum soluta magnam beatae consectetur in ut itaque repellendus explicabo necessitatibus, adipisci ratione suscipit. Nihil id eius facere nostrum sequi?
-                                    Vel aliquam soluta mollitia, cupiditate magni veniam qui. Recusandae esse soluta tenetur dolore eos tempore ab vero itaque, excepturi odio quam mollitia, eveniet eum voluptatibus modi sunt fugit magni aliquid?</span>
                             </div>
                             {/* <span className="fw-lighter">Nenhuma anotação encontrada</span> */}
                         </div>
@@ -62,10 +42,6 @@ const HomePage = () => {
                         </div>
                         <div className="scrollable-container">
                             <div className="w-100 mt-2 bg-secondary-custom p-3 rounded-3">
-                                <div className="d-flex justify-content-end align-items-center">
-                                    <a className="pointer fs-5 me-2"><i className="bi bi-pencil"></i></a>
-                                    <a className="pointer fs-5"><i className="bi bi-trash"></i></a>
-                                </div>
                                 <Link to='/anotacao/4'><h5>Lista 1 <i className="bi bi-arrow-return-right"></i></h5></Link>
                                 <ul className="without-dots">
                                     <li className="mb-2">
@@ -87,33 +63,17 @@ const HomePage = () => {
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
-                            <div className="w-100 mt-2 bg-secondary-custom p-3 rounded-3">
-                                <div className="d-flex justify-content-end align-items-center">
-                                    <a className="pointer fs-5 me-2"><i className="bi bi-pencil"></i></a>
-                                    <a className="pointer fs-5"><i className="bi bi-trash"></i></a>
+                                <div className="mt-2">
+                                    <span className="badge bg-danger me-2">Trabalho</span>
+                                    <span className="badge bg-primary me-2">Prioridade</span>
                                 </div>
-                                <Link to='/anotacao/4'><h5>Lista 2 <i className="bi bi-arrow-return-right"></i></h5></Link>
-                                <ul className="without-dots">
-                                    <li className="mb-2">
-                                        <div>
-                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                            <span className="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos consequuntur minus voluptates. Impedit quas perspiciatis unde cupiditate alias eius cum eum expedita illo, vero error est fugit obcaecati sed!</span>
-                                        </div>
-                                    </li>
-                                    <li className="mb-2">
-                                        <div>
-                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                            <span className="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos consequuntur minus voluptates. Impedit quas perspiciatis unde cupiditate alias eius cum eum expedita illo, vero error est fugit obcaecati sed!</span>
-                                        </div>
-                                    </li>
-                                    <li className="mb-2">
-                                        <div>
-                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                            <span className="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos consequuntur minus voluptates. Impedit quas perspiciatis unde cupiditate alias eius cum eum expedita illo, vero error est fugit obcaecati sed!</span>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <span className="fs-7 fw-lighter me-3 text-secondary-custom align-self-end">Criado em 01/08/2023 às 11:14</span>
+                                    <div>
+                                        <a className="pointer fs-5 me-2"><i className="bi bi-pencil"></i></a>
+                                        <a className="pointer fs-5"><i className="bi bi-trash"></i></a>
+                                    </div>
+                                </div>
                             </div>
                             {/* <span className="fw-lighter">Nenhuma lista encontrada</span> */}
                         </div>

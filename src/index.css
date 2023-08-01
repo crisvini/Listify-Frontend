@@ -303,3 +303,7 @@ a:hover {
   border-color: var(--orange-logo);
   box-shadow: 0 0 0 0.25rem rgba(255, 152, 0, .25);
 }
+
+.fs-7 {
+  font-size: 0.75rem;
+}
