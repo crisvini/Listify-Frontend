@@ -48,6 +48,10 @@ a:hover {
   transition: color .20s ease-in-out;
 }
 
+.text-orange {
+  color: var(--orange-logo);
+}
+
 .text-primary-custom {
   color: var(--text-primary-custom);
 }

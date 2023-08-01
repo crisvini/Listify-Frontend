@@ -2,11 +2,26 @@ import { Link } from "react-router-dom"
 import Tag from "./Tag"
 import Tarefa from "./Tarefa"
 
-const ListasCard = ({ id, nome, descricao, tarefas, tags }) => {
+const ListasCard = ({ id, nome, descricao, dataEntrega, compartilhada, tarefas, tags }) => {
     return (
         <div className="w-100 mt-2 bg-secondary-custom p-3 rounded-3">
-            <Link to={'/listas/' + id}><h5>{nome} <i className="bi bi-arrow-return-right fs-7"></i></h5></Link>
-            <span className="fw-light">{descricao}</span>
+            <div className="container-xxl p-0">
+                <div className="row">
+                    <div className="col-10">
+                        <Link to={'/listas/' + id}><h5>{nome} <i className="bi bi-arrow-return-right fs-7"></i></h5></Link>
+                    </div>
+                    <div className="col-2 text-end">
+                        {compartilhada && <span className="fs-5 text-primary"><i className="bi bi-people"></i></span>}
+                        <a className="pointer fs-5 ms-2"><i className="bi bi-share"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div className="my-1">
+                <span className="fw-lighter me-3 text-orange align-self-end">Entrega para {dataEntrega}</span>
+            </div>
+            <div>
+                <span className="fw-light">{descricao}</span>
+            </div>
             <ul className="without-dots mt-3">
                 {tarefas.map((value, key) => (
                     <Tarefa key={key} id={value.id} completa={value.completa} texto={value.texto} />

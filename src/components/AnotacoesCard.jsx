@@ -1,11 +1,23 @@
 import { Link } from "react-router-dom"
 import Tag from "./Tag"
 
-const AnotacoesCard = ({ id, nome, anotacao, tags }) => {
+const AnotacoesCard = ({ id, nome, anotacao, compartilhada, tags }) => {
     return (
         <div className="w-100 mt-2 bg-secondary-custom p-3 rounded-3">
-            <Link to={'/anotacoes/' + id}><h5>{nome} <i className="bi bi-arrow-return-right fs-7"></i></h5></Link>
-            <span>{anotacao}</span>
+            <div className="container-xxl p-0">
+                <div className="row">
+                    <div className="col-10">
+                        <Link to={'/anotacoes/' + id}><h5>{nome} <i className="bi bi-arrow-return-right fs-7"></i></h5></Link>
+                    </div>
+                    <div className="col-2 text-end">
+                        {compartilhada && <span className="fs-5 text-primary"><i className="bi bi-people"></i></span>}
+                        <a className="pointer fs-5 ms-2"><i className="bi bi-share"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span>{anotacao}</span>
+            </div>
             <div className="mt-2">
                 {tags.map((value, key) => (
                     <Tag key={key} corTexto={value.corTexto} corBg={value.corBg} nome={value.nome} />
