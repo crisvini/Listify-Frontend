@@ -1,9 +1,3 @@
-// const AnotacoesMockada = () => {
-//     return (
-//         <div>AnotacoesMockada</div>
-//     )
-// }
-
 const AnotacoesMockada = [
     {
         id: 1,
