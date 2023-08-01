@@ -1,7 +1,97 @@
 import { Link } from "react-router-dom"
 import Navbar from "../components/Navbar"
+import AnotacoesCard from "../components/AnotacoesCard"
+import ListasCard from "../components/ListasCard"
 
 const HomePage = () => {
+    const anotacoes = [
+        {
+            id: 1,
+            nome: 'Anotação 1',
+            anotacao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis commodi quam eum quisquam, saepe eos nostrum placeat culpa fugiat sit rerum exercitationem, recusandae deserunt sequi, tenetur sapiente qui eaque!',
+            tags: [
+                {
+                    nome: 'Trabalho',
+                    corBg: '#000000',
+                    corTexto: '#ffffff'
+                },
+                {
+                    nome: 'Prioridade',
+                    corBg: '#000000',
+                    corTexto: '#ffffff'
+                }
+            ]
+        },
+        {
+            id: 2,
+            nome: 'Anotação 2',
+            anotacao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis commodi quam eum quisquam, saepe eos nostrum placeat culpa fugiat sit rerum exercitationem, recusandae deserunt sequi, tenetur sapiente qui eaque!',
+            tags: [
+                {
+                    nome: 'Trabalho',
+                    corBg: '#000000',
+                    corTexto: '#ffffff'
+                },
+                {
+                    nome: 'Prioridade',
+                    corBg: '#000000',
+                    corTexto: '#ffffff'
+                }
+            ]
+        },
+        {
+            id: 3,
+            nome: 'Anotação 3',
+            anotacao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis commodi quam eum quisquam, saepe eos nostrum placeat culpa fugiat sit rerum exercitationem, recusandae deserunt sequi, tenetur sapiente qui eaque!',
+            tags: [
+                {
+                    nome: 'Trabalho',
+                    corBg: '#000000',
+                    corTexto: '#ffffff'
+                },
+                {
+                    nome: 'Prioridade',
+                    corBg: '#000000',
+                    corTexto: '#ffffff'
+                }
+            ]
+        },
+        {
+            id: 4,
+            nome: 'Anotação 4',
+            anotacao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis commodi quam eum quisquam, saepe eos nostrum placeat culpa fugiat sit rerum exercitationem, recusandae deserunt sequi, tenetur sapiente qui eaque!',
+            tags: [
+                {
+                    nome: 'Trabalho',
+                    corBg: '#000000',
+                    corTexto: '#ffffff'
+                },
+                {
+                    nome: 'Prioridade',
+                    corBg: '#000000',
+                    corTexto: '#ffffff'
+                }
+            ]
+        },
+        {
+            id: 5,
+            nome: 'Anotação 5',
+            anotacao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis commodi quam eum quisquam, saepe eos nostrum placeat culpa fugiat sit rerum exercitationem, recusandae deserunt sequi, tenetur sapiente qui eaque!',
+            tags: [
+                {
+                    nome: 'Trabalho',
+                    corBg: '#000000',
+                    corTexto: '#ffffff'
+                },
+                {
+                    nome: 'Prioridade',
+                    corBg: '#000000',
+                    corTexto: '#ffffff'
+                }
+            ]
+        }
+    ]
+
     return (
         <div>
             <Navbar />
@@ -9,26 +99,13 @@ const HomePage = () => {
                 <div className="row">
                     <div className="col-12 col-lg-6 border-lg-end">
                         <div className="w-100 d-flex justify-content-between align-items-center">
-                            <Link to='/anotacoes'><h1>Anotações</h1></Link>
+                            <Link to='/anotacoes'><h1>Anotações <i className="bi bi-arrow-return-right fs-6"></i></h1></Link>
                             <a className="pointer"><i className="bi bi-plus-circle fs-2"></i></a>
                         </div>
                         <div className="scrollable-container">
-                            <div className="w-100 mt-2 bg-secondary-custom p-3 rounded-3">
-                                <Link to='/anotacao/1'><h5>Anotação 1 <i className="bi bi-arrow-return-right"></i></h5></Link>
-                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi eum soluta magnam beatae consectetur in ut itaque repellendus explicabo necessitatibus, adipisci ratione suscipit. Nihil id eius facere nostrum sequi?
-                                    Vel aliquam soluta mollitia, cupiditate magni veniam qui. Recusandae esse soluta tenetur dolore eos tempore ab vero itaque, excepturi odio quam mollitia, eveniet eum voluptatibus modi sunt fugit magni aliquid?</span>
-                                <div className="mt-2">
-                                    <span className="badge bg-danger me-2">Trabalho</span>
-                                    <span className="badge bg-primary me-2">Prioridade</span>
-                                </div>
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <span className="fs-7 fw-lighter me-3 text-secondary-custom align-self-end">Criado em 01/08/2023 às 11:14</span>
-                                    <div>
-                                        <a className="pointer fs-5 me-2"><i className="bi bi-pencil"></i></a>
-                                        <a className="pointer fs-5"><i className="bi bi-trash"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                            {anotacoes.map((value, key) => (
+                                <AnotacoesCard id={value.id} nome={value.nome} anotacao={value.anotacao} key={key} tags={value.tags} />
+                            ))}
                             {/* <span className="fw-lighter">Nenhuma anotação encontrada</span> */}
                         </div>
                     </div>
@@ -37,44 +114,13 @@ const HomePage = () => {
                     </div>
                     <div className="col-12 col-lg-6 border-lg-start mt-lg-0">
                         <div className="w-100 d-flex justify-content-between align-items-center">
-                            <Link to='/listas'><h1>Listas</h1></Link>
+                            <Link to='/listas'><h1>Listas <i className="bi bi-arrow-return-right fs-6"></i></h1></Link>
                             <a className="pointer"><i className="bi bi-plus-circle fs-2"></i></a>
                         </div>
                         <div className="scrollable-container">
-                            <div className="w-100 mt-2 bg-secondary-custom p-3 rounded-3">
-                                <Link to='/anotacao/4'><h5>Lista 1 <i className="bi bi-arrow-return-right"></i></h5></Link>
-                                <ul className="without-dots">
-                                    <li className="mb-2">
-                                        <div>
-                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                            <span className="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos consequuntur minus voluptates. Impedit quas perspiciatis unde cupiditate alias eius cum eum expedita illo, vero error est fugit obcaecati sed!</span>
-                                        </div>
-                                    </li>
-                                    <li className="mb-2">
-                                        <div>
-                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                            <span className="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos consequuntur minus voluptates. Impedit quas perspiciatis unde cupiditate alias eius cum eum expedita illo, vero error est fugit obcaecati sed!</span>
-                                        </div>
-                                    </li>
-                                    <li className="mb-2">
-                                        <div>
-                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                            <span className="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos consequuntur minus voluptates. Impedit quas perspiciatis unde cupiditate alias eius cum eum expedita illo, vero error est fugit obcaecati sed!</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div className="mt-2">
-                                    <span className="badge bg-danger me-2">Trabalho</span>
-                                    <span className="badge bg-primary me-2">Prioridade</span>
-                                </div>
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <span className="fs-7 fw-lighter me-3 text-secondary-custom align-self-end">Criado em 01/08/2023 às 11:14</span>
-                                    <div>
-                                        <a className="pointer fs-5 me-2"><i className="bi bi-pencil"></i></a>
-                                        <a className="pointer fs-5"><i className="bi bi-trash"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                            {[1, 2, 3, 4, 5].map((value, key) => (
+                                <ListasCard id={value} key={key} />
+                            ))}
                             {/* <span className="fw-lighter">Nenhuma lista encontrada</span> */}
                         </div>
                     </div>
