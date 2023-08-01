@@ -9,7 +9,7 @@ const Navbar = () => {
     }
 
     return (
-        <header>
+        <header className='sticky-top'>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary-custom container-xxl mb-3 mb-lg-5">
                 <div className="container-fluid">
                     <Link className='navbar-brand' to='/home'><img src={Logo} alt="Listify" className="logo-navbar" /></Link>
@@ -32,6 +32,9 @@ const Navbar = () => {
                                     </li>
                                     <li className="nav-item me-3">
                                         <NavLink to='/listas'>Listas</NavLink>
+                                    </li>
+                                    <li className="nav-item me-3">
+                                        <NavLink to='/compartilhamento'>Compartilhamento</NavLink>
                                     </li>
                                     <li className="nav-item me-3">
                                         <NavLink to='/configuracoes'><i className="bi bi-gear"></i></NavLink>
