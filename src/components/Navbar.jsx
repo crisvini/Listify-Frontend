@@ -1,7 +1,13 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import Logo from '../assets/logos/Horizontal.png'
 
 const Navbar = () => {
+    const navigate = useNavigate()
+
+    const handleSair = () => {
+        navigate('/')
+    }
+
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary-custom container-xxl mb-3 mb-lg-5">
@@ -31,12 +37,12 @@ const Navbar = () => {
                                         <NavLink to='/configuracoes'><i className="bi bi-gear"></i></NavLink>
                                     </li>
                                     <li className="nav-item d-lg-none mt-2">
-                                        <button type='button' className='btn btn-outline-orange w-100'>Sair</button>
+                                        <button type='button' className='btn btn-outline-orange w-100' onClick={() => handleSair()}>Sair</button>
                                     </li>
                                 </ul>
-                                <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 d-none d-lg-flex">
+                                <ul className="navbar-nav justify-content-end flex-grow-1 d-none d-lg-flex">
                                     <li className="nav-item">
-                                        <button type='button' className='btn btn-outline-orange'>Sair</button>
+                                        <button type='button' className='btn btn-outline-orange' onClick={() => handleSair()}>Sair</button>
                                     </li>
                                 </ul>
                             </div>
