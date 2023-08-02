@@ -3,6 +3,7 @@ import ListasCard from "../components/ListasCard"
 import ListasMockada from "../components/ListasMockada"
 import ListasCardCompartilhado from "../components/ListasCardCompartilhado"
 import NovaTag from "../components/NovaTag"
+import { Link } from "react-router-dom"
 
 const ListasPage = () => {
     return (
@@ -17,7 +18,7 @@ const ListasPage = () => {
                     <div className="col-12 col-lg-6 border-lg-end">
                         <div className="w-100 d-flex justify-content-between align-items-center">
                             <h2 className="text-secondary-custom">Criadas por mim</h2>
-                            <a className="pointer"><i className="bi bi-plus-circle fs-2"></i></a>
+                            <Link to='/listas/nova'><i className="bi bi-plus-circle fs-2"></i></Link>
                         </div>
                         <div className="scrollable-container">
                             {ListasMockada.length > 0 ?

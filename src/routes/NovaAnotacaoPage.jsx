@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar"
 
-const ListaPage = () => {
+const AnotacaoPage = () => {
     return (
         <>
             <Navbar />
@@ -8,4 +8,4 @@ const ListaPage = () => {
     )
 }
 
-export default ListaPage
+export default AnotacaoPage

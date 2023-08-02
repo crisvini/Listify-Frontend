@@ -3,6 +3,7 @@ import AnotacoesCard from "../components/AnotacoesCard"
 import AnotacoesMockada from "../components/AnotacoesMockada"
 import AnotacoesCardCompartilhado from "../components/AnotacoesCardCompartilhado"
 import NovaTag from "../components/NovaTag"
+import { Link } from "react-router-dom"
 
 const AnotacoesPage = () => {
     return (
@@ -17,7 +18,7 @@ const AnotacoesPage = () => {
                     <div className="col-12 col-lg-6 border-lg-end">
                         <div className="w-100 d-flex justify-content-between align-items-center">
                             <h2 className="text-secondary-custom">Criadas por mim</h2>
-                            <a className="pointer"><i className="bi bi-plus-circle fs-2"></i></a>
+                            <Link to='/anotacoes/nova'><i className="bi bi-plus-circle fs-2"></i></Link>
                         </div>
                         <div className="scrollable-container">
                             {AnotacoesMockada.length > 0 ?
