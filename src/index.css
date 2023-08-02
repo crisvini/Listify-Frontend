@@ -266,7 +266,7 @@ a:hover {
 }
 
 .scrollable-container {
-  height: 70vh;
+  height: 80vh;
   overflow-y: scroll;
   padding-right: 7px;
 }

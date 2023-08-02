@@ -34,9 +34,6 @@ const Navbar = () => {
                                         <NavLink to='/listas'>Listas</NavLink>
                                     </li>
                                     <li className="nav-item me-3">
-                                        <NavLink to='/compartilhamento'>Compartilhamento</NavLink>
-                                    </li>
-                                    <li className="nav-item me-3">
                                         <NavLink to='/configuracoes'><i className="bi bi-gear"></i></NavLink>
                                     </li>
                                     <li className="nav-item d-lg-none mt-2">

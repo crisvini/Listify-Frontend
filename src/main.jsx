@@ -15,7 +15,6 @@ import HomePage from './routes/HomePage.jsx'
 import ConfiguracoesPage from './routes/ConfiguracoesPage.jsx'
 import AnotacoesPage from './routes/AnotacoesPage.jsx'
 import ListasPage from './routes/ListasPage.jsx'
-import CompartilhamentoPage from './routes/CompartilhamentoPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -58,10 +57,6 @@ const router = createBrowserRouter([
       {
         path: 'listas',
         element: <ListasPage />
-      },
-      {
-        path: 'compartilhamento',
-        element: <CompartilhamentoPage />
       },
       {
         path: 'configuracoes',
