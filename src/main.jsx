@@ -14,6 +14,8 @@ import ConfirmacaoEmailPage from './routes/ConfirmacaoEmailPage.jsx'
 import HomePage from './routes/HomePage.jsx'
 import AnotacoesPage from './routes/AnotacoesPage.jsx'
 import ListasPage from './routes/ListasPage.jsx'
+import ListaPage from './routes/ListaPage.jsx'
+import AnotacaoPage from './routes/AnotacaoPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -50,12 +52,20 @@ const router = createBrowserRouter([
         element: <HomePage />
       },
       {
+        path: 'listas',
+        element: <ListasPage />
+      },
+      {
+        path: 'listas/nova',
+        element: <ListaPage />
+      },
+      {
         path: 'anotacoes',
         element: <AnotacoesPage />
       },
       {
-        path: 'listas',
-        element: <ListasPage />
+        path: 'anotacoes/nova',
+        element: <AnotacaoPage />
       }
     ]
   }

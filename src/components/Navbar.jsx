@@ -28,10 +28,10 @@ const Navbar = () => {
                                         <NavLink to='/home'>Home</NavLink>
                                     </li>
                                     <li className="nav-item me-3">
-                                        <NavLink to='/anotacoes'>Anotações</NavLink>
+                                        <NavLink to='/listas'>Listas</NavLink>
                                     </li>
                                     <li className="nav-item me-3">
-                                        <NavLink to='/listas'>Listas</NavLink>
+                                        <NavLink to='/anotacoes'>Anotações</NavLink>
                                     </li>
                                     <li className="nav-item d-lg-none mt-2">
                                         <button type='button' className='btn btn-outline-orange w-100' onClick={() => handleSair()}>Sair</button>

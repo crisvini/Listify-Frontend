@@ -12,12 +12,12 @@ const HomePage = () => {
                             <div className="row g-3">
                                 <div className="col-12 col-lg-4">
                                     <button className="btn btn-lg btn-outline-orange p-3 w-100">
-                                        <span>Nova anotação&nbsp;<i className="bi bi-plus-circle"></i></span>
+                                        <span>Nova lista&nbsp;<i className="bi bi-plus-circle"></i></span>
                                     </button>
                                 </div>
                                 <div className="col-12 col-lg-4">
                                     <button className="btn btn-lg btn-outline-orange p-3 w-100">
-                                        <span>Nova lista&nbsp;<i className="bi bi-plus-circle"></i></span>
+                                        <span>Nova anotação&nbsp;<i className="bi bi-plus-circle"></i></span>
                                     </button>
                                 </div>
                                 <div className="col-12 col-lg-4">
