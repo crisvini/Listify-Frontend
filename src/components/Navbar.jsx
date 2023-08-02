@@ -33,9 +33,6 @@ const Navbar = () => {
                                     <li className="nav-item me-3">
                                         <NavLink to='/listas'>Listas</NavLink>
                                     </li>
-                                    <li className="nav-item me-3">
-                                        <NavLink to='/configuracoes'><i className="bi bi-gear"></i></NavLink>
-                                    </li>
                                     <li className="nav-item d-lg-none mt-2">
                                         <button type='button' className='btn btn-outline-orange w-100' onClick={() => handleSair()}>Sair</button>
                                     </li>
