@@ -1,5 +1,4 @@
 import Navbar from "../components/Navbar"
-import ListasAtalhos from "../components/ListasAtalhos"
 
 const HomePage = () => {
     return (
@@ -27,14 +26,6 @@ const HomePage = () => {
                                     </button>
                                 </div>
                             </div>
-                            {/* <ul className="mb-0 without-dots">
-                                <ListasAtalhos to='/anotacoes' texto='Anotações' redirect={true} />
-                                <ListasAtalhos to='/listas' texto='Listas' redirect={true} />
-                                <ListasAtalhos to='/configuracoes' texto='Configurações' redirect={true} />
-                                <ListasAtalhos to='/configuracoes' texto='Nova anotação' redirect={false} />
-                                <ListasAtalhos to='/configuracoes' texto='Nova lista' redirect={false} />
-                                <ListasAtalhos to='/configuracoes' texto='Nova tag' redirect={false} />
-                            </ul> */}
                         </div >
                     </div>
                 </div>
