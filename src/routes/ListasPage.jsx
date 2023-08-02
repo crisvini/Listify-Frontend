@@ -11,7 +11,11 @@ const ListasPage = () => {
                     <div className="col-12">
                         <div className="w-100 d-flex justify-content-between align-items-center">
                             <h1>Listas</h1>
-                            <a className="pointer"><i className="bi bi-plus-circle fs-2"></i></a>
+                            <div className="d-flex justify-content-end align-items-center">
+                                <input type="email" className="w-100 form-control" id="buscar" placeholder="Buscar" />
+                                <a className="ms-3 pointer"><i className="bi bi-funnel fs-2"></i></a>
+                                <a className="ms-3 pointer"><i className="bi bi-plus-circle fs-2"></i></a>
+                            </div>
                         </div>
                         <div>
                             {ListasMockada.length > 0 ?

@@ -308,6 +308,10 @@ a:hover {
   box-shadow: 0 0 0 0.25rem rgba(255, 152, 0, .25);
 }
 
+input::placeholder {
+  color: var(--text-primary-custom) !important;
+}
+
 .fs-7 {
   font-size: 0.75rem;
 }
