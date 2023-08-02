@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import AnotacoesCard from "../components/AnotacoesCard"
 import AnotacoesMockada from "../components/AnotacoesMockada"
 import AnotacoesCardCompartilhado from "../components/AnotacoesCardCompartilhado"
+import NovaTag from "../components/NovaTag"
 
 const AnotacoesPage = () => {
     return (
@@ -9,8 +10,9 @@ const AnotacoesPage = () => {
             <Navbar />
             <main className="container-xxl mb-5">
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-12 d-flex justify-content-between align-items-end">
                         <h1>Anotações</h1>
+                        <NovaTag />
                     </div>
                     <div className="col-12 col-lg-6 border-lg-end">
                         <div className="w-100 d-flex justify-content-between align-items-center">

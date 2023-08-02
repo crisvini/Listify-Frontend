@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import ListasCard from "../components/ListasCard"
 import ListasMockada from "../components/ListasMockada"
 import ListasCardCompartilhado from "../components/ListasCardCompartilhado"
+import NovaTag from "../components/NovaTag"
 
 const ListasPage = () => {
     return (
@@ -9,8 +10,9 @@ const ListasPage = () => {
             <Navbar />
             <main className="container-xxl mb-5">
                 <div className="row mb-5">
-                    <div className="col-12">
+                    <div className="col-12 d-flex justify-content-between align-items-end">
                         <h1>Listas</h1>
+                        <NovaTag />
                     </div>
                     <div className="col-12 col-lg-6 border-lg-end">
                         <div className="w-100 d-flex justify-content-between align-items-center">

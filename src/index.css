@@ -315,3 +315,20 @@ input::placeholder {
 .fs-7 {
   font-size: 0.75rem;
 }
+
+.atalho {
+  background-color: var(--orange-logo);
+}
+
+.atalho:hover {
+  background-color: #e6865b;
+  color: var(--text-primary-custom);
+}
+
+.atalho span {
+  text-align: var(--text-primary-custom);
+}
+
+/* .atalho span {
+  text-align: var(--text-primary-custom);
+} */
